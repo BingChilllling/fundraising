@@ -124,23 +124,6 @@ font-weight: 900;
 line-height: normal;
 }
 
-#diamond_tier {
-    padding-top:1.2rem;
-    display: flex;
-    height: 53px;
-    width: 100%;
-    flex-direction: column;
-    justify-content: flex-end;
-    flex-shrink: 0;
-    color: #00B1DA;
-    text-align: center;
-    font-family: Lovelo;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
-}
-
 #list {
     font-family: "Open Sans";
     display: flex;
