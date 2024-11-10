@@ -1,0 +1,129 @@
+#business_donation {
+    color: var(--Labels-Primary, #000);
+    font-family: Lovelo;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 130%; /* 39px */
+    letter-spacing: -0.3px;
+}
+
+#school_name {
+    color: var(--Labels-Primary, #000);
+    text-align: center;
+    font-family: Lovelo;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.btn_bronze {
+    width: 366px;
+height: 160px;
+flex-shrink: 0;
+border-radius: 10px;
+border: 1px solid #CD7F32;
+background: #F4F4F4;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.btn_silver {
+    width: 366px;
+height: 160px;
+flex-shrink: 0;
+border-radius: 10px;
+border: 1px solid #767676;
+background: #F4F4F4;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.btn_gold {
+    width: 366px;
+height: 160px;
+flex-shrink: 0;
+border-radius: 10px;
+border: 1px solid #EBB70E;
+background: #F4F4F4;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.btn_diamond {
+    width: 366px;
+height: 160px;
+flex-shrink: 0;
+border-radius: 10px;
+border: 1px solid #00B1DA;
+background: #F4F4F4;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+#bronze_tier {
+    display: flex;
+width: 320px;
+height: 53px;
+flex-direction: column;
+justify-content: flex-end;
+flex-shrink: 0;
+color: #CD7F32;
+text-align: center;
+font-family: Lovelo;
+font-size: 48px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+}
+
+#silver_tier {
+    display: flex;
+width: 320px;
+height: 53px;
+flex-direction: column;
+justify-content: flex-end;
+flex-shrink: 0;
+color: #767676;
+text-align: center;
+font-family: Lovelo;
+font-size: 48px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+}
+
+#gold_tier {
+    display: flex;
+width: 320px;
+height: 53px;
+flex-direction: column;
+justify-content: flex-end;
+flex-shrink: 0;
+color: #EBB70E;
+text-align: center;
+font-family: Lovelo;
+font-size: 48px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;}
+
+#diamond_tier {
+
+}
+
+#list {
+    display: flex;
+    width: 279px;
+    height: 71.837px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--Labels-Primary, #000);
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
