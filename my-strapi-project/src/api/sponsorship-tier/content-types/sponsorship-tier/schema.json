@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sponsorship_tiers",
+  "info": {
+    "singularName": "sponsorship-tier",
+    "pluralName": "sponsorship-tiers",
+    "displayName": "Sponsorship Tier"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tierName": {
+      "type": "string"
+    },
+    "tierDescription": {
+      "type": "blocks"
+    },
+    "advertisingBenefits": {
+      "type": "blocks"
+    },
+    "tierRank": {
+      "type": "integer"
+    },
+    "sponsors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::sports-team.sports-team",
+      "mappedBy": "sponsorship_tier"
+    }
+  }
+}
