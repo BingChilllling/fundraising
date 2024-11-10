@@ -1,0 +1,61 @@
+#individual_donation{
+    padding-left:1rem;
+    padding-top:1rem;
+    color: var(--Labels-Primary, #000);
+font-family: Lovelo;
+font-size: 30px;
+font-style: normal;
+font-weight: 900;
+line-height: 130%; /* 39px */
+letter-spacing: -0.3px;
+margin-bottom:12rem;
+}
+
+#one_time{
+    display: flex;
+width: 292px;
+height: 61px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+    margin-left:auto;
+    margin-right: auto;
+    color: var(--Labels-Primary, #000);
+text-align: center;
+font-family: Lovelo;
+font-size: 40px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+width: 366px;
+height: 117px;
+flex-shrink: 0;
+border-radius: 10px;
+background: #F4F4F4;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+margin-bottom:3rem;
+}
+
+#subscription{
+    display: flex;
+width: 292px;
+height: 61px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+    margin-left:auto;
+    margin-right: auto;
+    width: 366px;
+height: 117px;
+flex-shrink: 0;
+border-radius: 10px;
+background: #F4F4F4;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: var(--Labels-Primary, #000);
+text-align: center;
+font-family: Lovelo;
+font-size: 40px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+}
