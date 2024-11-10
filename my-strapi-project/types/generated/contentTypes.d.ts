@@ -534,6 +534,79 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiSponsorshipTierSponsorshipTier
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'sponsorship_tiers';
+  info: {
+    displayName: 'Sponsorship Tier';
+    pluralName: 'sponsorship-tiers';
+    singularName: 'sponsorship-tier';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    advertisingBenefits: Schema.Attribute.Blocks;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::sponsorship-tier.sponsorship-tier'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    sponsors: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::sports-team.sports-team'
+    >;
+    tierDescription: Schema.Attribute.Blocks;
+    tierName: Schema.Attribute.String;
+    tierRank: Schema.Attribute.Integer;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiSportsTeamSportsTeam extends Struct.CollectionTypeSchema {
+  collectionName: 'sports_teams';
+  info: {
+    description: '';
+    displayName: 'Sponsors';
+    pluralName: 'sports-teams';
+    singularName: 'sports-team';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::sports-team.sports-team'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    sponsorLogo: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    sponsorName: Schema.Attribute.String;
+    sponsorship_tier: Schema.Attribute.Relation<
+      'manyToOne',
+      'api::sponsorship-tier.sponsorship-tier'
+    >;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface PluginContentReleasesRelease
   extends Struct.CollectionTypeSchema {
   collectionName: 'strapi_releases';
@@ -1048,6 +1121,8 @@ declare module '@strapi/strapi' {
       'api::author.author': ApiAuthorAuthor;
       'api::category.category': ApiCategoryCategory;
       'api::global.global': ApiGlobalGlobal;
+      'api::sponsorship-tier.sponsorship-tier': ApiSponsorshipTierSponsorshipTier;
+      'api::sports-team.sports-team': ApiSportsTeamSportsTeam;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

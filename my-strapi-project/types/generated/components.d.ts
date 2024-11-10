@@ -3,24 +3,21 @@ import type { Schema, Struct } from '@strapi/strapi';
 export interface SharedMedia extends Struct.ComponentSchema {
   collectionName: 'components_shared_media';
   info: {
+    description: '';
     displayName: 'Media';
     icon: 'file-video';
   };
-  attributes: {
-    file: Schema.Attribute.Media<'images' | 'files' | 'videos'>;
-  };
+  attributes: {};
 }
 
 export interface SharedQuote extends Struct.ComponentSchema {
   collectionName: 'components_shared_quotes';
   info: {
+    description: '';
     displayName: 'Quote';
     icon: 'indent';
   };
-  attributes: {
-    body: Schema.Attribute.Text;
-    title: Schema.Attribute.String;
-  };
+  attributes: {};
 }
 
 export interface SharedRichText extends Struct.ComponentSchema {
@@ -30,9 +27,7 @@ export interface SharedRichText extends Struct.ComponentSchema {
     displayName: 'Rich text';
     icon: 'align-justify';
   };
-  attributes: {
-    body: Schema.Attribute.RichText;
-  };
+  attributes: {};
 }
 
 export interface SharedSeo extends Struct.ComponentSchema {

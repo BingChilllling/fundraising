@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sports_teams",
+  "info": {
+    "singularName": "sports-team",
+    "pluralName": "sports-teams",
+    "displayName": "Sponsors",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sponsorName": {
+      "type": "string"
+    },
+    "sponsorLogo": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "sponsorship_tier": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::sponsorship-tier.sponsorship-tier",
+      "inversedBy": "sponsors"
+    }
+  }
+}
